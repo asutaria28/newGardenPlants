@@ -1,0 +1,151 @@
+* {
+ box-sizing: border-box;
+
+}
+
+/* =================================
+    Base Element Styles
+====================================== */
+
+.logo{
+    height: 7em;
+    border-radius: 1em;
+    box-shadow: 5px 5px 5px black;
+    width: 25em;
+  }
+
+  .separator{
+   border: 0;
+   border-top: 1px solid black;
+
+  }
+  a {
+      color:forestgreen;
+  }
+ 
+  a:link{
+      text-decoration: none;
+      
+  }
+
+   a:hover{
+     text-decoration: underline;
+   }
+  .azalea{
+      height: 100px;
+  }
+/* =================================
+    Base Layout Styles
+====================================== */
+
+
+/* Layout containers */
+.container{
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+
+}
+.main-header{
+  height: 8em;
+  margin-bottom: 150px;
+  padding: 1em 0;
+
+}
+
+h2{
+    font-display: center;
+}
+
+
+.main-nav li{
+   margin: 2px 5px; 
+   font-size: 18px;
+}
+
+.main-nav {
+ text-align: center;
+ padding-left: 150px;
+
+}
+
+
+
+/* =================================
+    Base Element Styles
+====================================== */
+
+
+.facebook{
+  height: 2.5em;
+}
+
+.pinterest{
+  height: 3em;
+}
+
+.google{
+  height: 3em;
+}
+.p1{
+  margin-top: 20px;
+}
+
+h1{
+  text-align: center;
+}
+
+/* =================================
+    Media Queries
+====================================== */
+@media (min-width: 769px) {
+  .container2{
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  .container1{
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;    
+  }
+  .wrap{
+    min-height: 100vh;
+  }
+
+   a{
+     padding: 0 30px;
+   }
+  .logo,
+  .main-nav,
+  .main-nav li{
+   display: inline-block;
+
+  }
+  
+ 
+ .featured{
+    display: flex;
+    flex-wrap: wrap;
+
+ }
+ 
+ .best,
+ .petesPicks,
+ .sale{
+     flex: 1 1 auto;
+     
+ }
+
+ .collections{
+    display: flex;
+    flex-wrap: wrap;
+
+ }
+}
+
+@media (min-width: 1050px) {
+  
+
+}
