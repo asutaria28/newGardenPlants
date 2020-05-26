@@ -100,21 +100,39 @@ h1{
   text-align: center;
 }
 
-.transbox{
-    position: relative;
-    max-width: 207px;
-    margin: 0 auto;
-  }
-  
-  .transbox h3 {
-    position: absolute;
-    bottom: 0;
-    background: rgb (0,0,0);
-    background: rgb (0,0,0,2);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-  }
+.item1,
+.item2,
+.item3,
+.sun,
+.shade,
+.annuals,
+.new,
+.foliage,
+.shrubs,
+.vines,
+.jumbo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+  overflow: auto;
+}
+
+h3{
+position: absolute;
+}
+
+h3 span{
+  color: white;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 40px;
+  font-size: 20px;
+  resize: both;
+  overflow:auto;
+}
 
 
 /* =================================
@@ -156,8 +174,11 @@ h1{
  flex-direction: row;
  flex-wrap: wrap;
  justify-content: space-around;
+ align-content: space-between;
 
   }
+
+  
   .wrap{
     min-height: 100vh;
   }
