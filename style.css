@@ -6,12 +6,15 @@
 /* =================================
     Base Element Styles
 ====================================== */
-
+*{
+  
+  font-family: 'Playfair Display', serif;
+}
 .logo{
-    height: 7em;
+    height: 4em;
     border-radius: 1em;
     box-shadow: 0 0 10px black;
-    width: 25em;
+    width: 15em;
   }
 
   .separator{
@@ -49,13 +52,13 @@
 }
 .main-header{
   height: 8em;
-  margin-bottom: 150px;
+  margin-bottom: 70px;
   padding: 1em 0;
 
 }
 
 .p1{
-margin-top: 80px;
+margin-top: 50px;
 }
 
 h2{
@@ -64,7 +67,8 @@ h2{
 
 
 .main-nav li{
-   margin: 2px 5px; 
+   margin: 2px; 
+
    font-size: 18px;
 }
 
@@ -96,12 +100,35 @@ h1{
   text-align: center;
 }
 
+.transbox{
+    position: relative;
+    max-width: 207px;
+    margin: 0 auto;
+  }
+  
+  .transbox h3 {
+    position: absolute;
+    bottom: 0;
+    background: rgb (0,0,0);
+    background: rgb (0,0,0,2);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+
 /* =================================
     Media Queries
 ====================================== */
 @media only screen and (min-width: 769px),
        only screen and (min-width: 700px) and (orientation:landscape)
         {
+
+          .main-header{
+            margin-bottom: 20px;
+          
+          }
+
   .container2{
     width: 90%;
     margin: 0 auto;
@@ -151,4 +178,12 @@ h1{
 
 @media only screen and (min-width: 1200px) {
 
+  .logo{
+    height: 7em;
+    width: 25em;
+  }
+
+  .main-header{
+    margin-bottom: 50px;
+  }
 }
