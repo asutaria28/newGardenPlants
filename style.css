@@ -35,7 +35,7 @@
      text-decoration: underline;
    }
   .azalea{
-      height: 100px;
+      height: 250px;
   }
 /* =================================
     Base Layout Styles
@@ -121,6 +121,8 @@ h1{
 
 h3{
 position: absolute;
+top: 65px;
+left: 10px;
 }
 
 h3 span{
@@ -128,7 +130,7 @@ h3 span{
   letter-spacing: -1px;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.6);
-  padding: 40px 40px;
+  padding: 30px;
   font-size: 20px;
   resize: both;
   overflow:auto;
