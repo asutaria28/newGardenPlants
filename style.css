@@ -12,9 +12,10 @@
 }
 .logo{
     height: 4em;
-    border-radius: 1em;
+    border-radius: .5em;
     box-shadow: 0 0 10px black;
     width: 15em;
+    margin-left: 10px;
   }
 
   .separator{
@@ -35,7 +36,7 @@
      text-decoration: underline;
    }
   .azalea{
-      height: 250px;
+      height: 350px;
   }
 /* =================================
     Base Layout Styles
@@ -76,7 +77,13 @@ h2{
  text-align: center;
 }
 
-
+footer{
+  margin-top: 100px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 0%;
+}
 
 
 /* =================================
@@ -115,22 +122,21 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  resize: both;
-  overflow: auto;
+  overflow: hidden;
+  padding-top: 25px;
 }
 
 h3{
 position: absolute;
-top: 65px;
-left: 10px;
+top: 95px;
+left: 125px;
 }
 
 h3 span{
   color: white;
-  letter-spacing: -1px;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.6);
-  padding: 30px;
+  padding: 150px 80px;
   font-size: 20px;
   resize: both;
   overflow:auto;
