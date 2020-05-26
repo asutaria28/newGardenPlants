@@ -128,15 +128,15 @@ h1{
 
 h3{
 position: absolute;
-top: 95px;
-left: 125px;
+top: 172px;
+left: 110px;
 }
 
 h3 span{
   color: white;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.6);
-  padding: 150px 80px;
+  padding: 90px 60px;
   font-size: 20px;
   resize: both;
   overflow:auto;
