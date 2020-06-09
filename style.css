@@ -78,13 +78,18 @@ h2{
 }
 
 footer{
+  background-color: rgb(9, 59, 24);
+  text-align: Center;
   margin-top: 100px;
+  padding-top: 50px;
   display:flex;
   flex-direction: column;
-  justify-content: center;
   flex: 1 0 0%;
 }
 
+#social-media{
+     display:inline;
+}
 
 /* =================================
     Base Element Styles
@@ -92,15 +97,17 @@ footer{
 
 
 .facebook{
-  height: 2.5em;
+  height: 2.8em;
 }
 
 .pinterest{
-  height: 3em;
+  height: 2.6em;
+  margin-left: 20px;
 }
 
 .google{
-  height: 3em;
+  height: 3.3em;
+  margin-left: 20px;
 }
 
 h1{
