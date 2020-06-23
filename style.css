@@ -218,6 +218,12 @@ h4{
   margin-top: 20px;
 }
 
+.imgWithText{
+   text-align: center;
+   width: 207px;
+
+}
+
 .sun,
 .shade,
 .annuals,
@@ -277,6 +283,14 @@ h3{
     margin-top:3em;
     
   }
+
+.flex-container2 {
+   display: flex; 
+   flex-basis: auto;
+   flex: 50%;
+
+}
+
 
 }
 
