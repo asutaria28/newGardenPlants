@@ -44,6 +44,11 @@
   width: 100%;
 }
 
+.pete,
+.nursery,
+.greenhouse {
+  height: 270px;
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -267,6 +272,17 @@ h3{
 /* =================================
     Media Queries
 ====================================== */
+@media only screen and (min-width: 620px){
+  .slideshow-container {
+    margin-top:3em;
+    
+  }
+
+}
+
+
+
+
 @media only screen and (min-width: 769px),
        only screen and (min-width: 700px) and (orientation:landscape)
         {
