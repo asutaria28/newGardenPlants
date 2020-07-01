@@ -18,6 +18,42 @@
     margin-left: 10px;
   }
 
+  /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.pinterest {
+  background: rgb(230, 50, 37);
+  color: white;
+}
+
+}
+
   .separator{
    border: 0;
    border-top: 1px solid black;
@@ -83,7 +119,7 @@
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: black;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -94,7 +130,7 @@
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: black;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -179,7 +215,7 @@ h2{
 }
 
 footer{
-  background-color: rgb(9, 59, 24);
+  background-color: rgb(21, 121, 51);
   text-align: Center;
   margin-top: 100px;
   padding-top: 50px;
@@ -189,23 +225,17 @@ footer{
   flex: 1 0 0%;
 }
 
-#social-media{
-     display:inline;
+.email{
+  color: black;
 }
+
 
 /* =================================
     Base Element Styles
 ====================================== */
 
 
-.facebook{
-  height: 2.8em;
-}
 
-.pinterest{
-  height: 2.6em;
-  margin-left: 20px;
-}
 
 .google{
   height: 3.3em;
