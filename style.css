@@ -226,6 +226,11 @@ footer{
   flex: 1 0 0%;
 }
 
+form{
+  margin-right: 80px;
+  margin-top: 20px;
+}
+
 #copyright{
   padding-top: 4em;
   padding-left: 2em;
@@ -462,9 +467,13 @@ h3{
 .pete,
 .nursery,
 .greenhouse {
-  height: 500px;
+  height: 400px;
 }
 
+.break{
+   width: 90%;
+   margin-left: 70px;
+}
 .container2{
   width: 1500px;
   max-width: 1800px;
