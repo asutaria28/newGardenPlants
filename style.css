@@ -215,6 +215,7 @@ h2{
 
 footer{
   background-color: rgb(21, 121, 51);
+  color: white;
   text-align: Center;
   margin-top: 100px;
   padding-bottom: 25px;
@@ -230,7 +231,7 @@ footer{
   padding-left: 2em;
 }
 .email{
-  color: black;
+  color: white;
 }
 
 
@@ -441,4 +442,40 @@ h3{
   .main-header{
     margin-bottom: 50px;
   }
+
+  h1, .p1 {
+    width: auto;
+    margin: 20px 100px;
+  }
+
+  
+
+  /* Slideshow container */
+.slideshow-container {
+  max-width: 1800px;
+  position: relative;
+  margin-top:6.5em;
+  width: 90%;
+  padding-left: 10em;
+}
+
+.pete,
+.nursery,
+.greenhouse {
+  height: 500px;
+}
+
+.container2{
+  width: 1500px;
+  max-width: 1800px;
+}
+.flex-container2 {
+  width: 90%;
+  margin-left: 30px;
+}
+
+.imgWithText{
+  padding-left: 15px;
+  margin-left: 70px;
+}
 }
