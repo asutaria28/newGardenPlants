@@ -41,3 +41,25 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
+
+/*form validation on contact section */
+
+function validate() {
+  
+  if (document.form.fullName.value == ""){
+    alert( "Please provide your name!" );
+    document.form.fullName.focus() ;
+    return false;
+  }
+ 
+  if( document.form.email.value == "" ) {
+    alert( "Please provide your Email!" );
+    document.form.email.focus() ;
+    return false;
+  }
+  
+  else(true){
+    alert("Thank you for signing up!");
+
+  }
+}

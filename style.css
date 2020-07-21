@@ -12,8 +12,8 @@
 }
 .logo{
     height: 4em;
-    border-radius: .5em;
-    box-shadow: 8px 8px 20px 2px black;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px -2px black;
     width: 15em;
     margin-left: 10px;
   }
@@ -35,6 +35,7 @@
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
+  z-index: 56;
 }
 
 /* Style the social media icons with color, if you want */
@@ -80,11 +81,14 @@
   width: 100%;
 }
 
+
+/* Slideshow pictures */
 .pete,
 .nursery,
 .greenhouse {
-  height: 270px;
+  height: 550px;
 }
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -243,7 +247,13 @@ form{
   color: white;
 }
 
+/*Layout for about page*/
 
+.pottedPlants {
+  margin-top: 25px;
+  width: 100%;
+
+}
 /* =================================
     Base Element Styles
 ====================================== */
@@ -253,7 +263,7 @@ form{
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Dropdown Content for nav item (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -261,6 +271,8 @@ form{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 3px;
+  margin-top: 4px;
 }
 
 /* Links inside the dropdown */
@@ -272,13 +284,11 @@ form{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: rgb(10, 94, 35);}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
 .google{
