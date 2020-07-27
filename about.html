@@ -31,9 +31,21 @@
             <nav class="main-nav container1">
             <ul>
              <li><a href="index.html">Home</a></li>
-             <li><a href="#">Plant Types</a></li>
+             <div class="dropdown">
+                <a class="dropdown">Plant Types</a>
+                <div class="dropdown-content">
+                  <li><a href="#">New Plants</a></li>
+                  <li><a href="#">Shade Perennials</a></li>
+                  <li><a href="#">Sun Perennials</a></li>
+                  <li><a href="#">Colorful Annuals</a></li>
+                  <li><a href="#">Unique Foliage</a></li>
+                  <li><a href="#">Shrubs and Roses</a></li>
+                  <li><a href="#">Vines and Climbers</a></li>
+                  <li><a href="#">Jumbo Plants</a></li>
+                </div>
+              </div>
              <li><a href="about.html">About</a></li>
-             <li><a href="#">Contact Us</a></li>
+             <li><a href="about.html#contact">Contact Us</a></li>
      
             </ul>
          </nav>
@@ -41,8 +53,9 @@
      
          </Header>
       <main>
+       
         <img src="Pictures/potted-plants9.jpg" alt="potted plants in greenhouse" class="pottedPlants">
-
+     
 
 
       </main>
@@ -64,7 +77,7 @@
                <label for="name"> Full Name:</label><br>
                <input type="text" id="name" name="fullName"><br><br>
                <label for="email">Email:</label><br>
-               <input type="email" id="email" name="email"><br><br>
+               <input type="email" id="email" name="email" placeholder="        email@site.com"><br><br>
                <input type="submit" value="Submit">
              </form>
      
