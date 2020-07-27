@@ -25,6 +25,7 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 56;
 }
 
 /* Style the icon bar links */
@@ -35,7 +36,6 @@
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
- z-index: 56;
 }
 
 /* Style the social media icons with color, if you want */
@@ -83,7 +83,7 @@
 
 
 /* Slideshow pictures */
-.pete,
+.woman,
 .nursery,
 .greenhouse {
   height: 550px;
@@ -123,7 +123,7 @@
 
 /* Caption text */
 .text {
-  color: black;
+  color: white;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -250,10 +250,12 @@ form{
 /*Layout for about page*/
 
 .pottedPlants {
-  margin-top: 25px;
+  margin-top: 50px;
   width: 100%;
 
 }
+
+
 /* =================================
     Base Element Styles
 ====================================== */
@@ -385,7 +387,7 @@ h3{
 }
 
 
-@media only screen and (min-width: 769px),
+@media only screen and (min-width: 760px),
        only screen and (min-width: 700px) and (orientation:landscape)
         {
 
@@ -394,7 +396,7 @@ h3{
           
           }
 
-          .pete,
+          .woman,
           .nursery,
           .greenhouse {
             height: 350px;
@@ -508,7 +510,7 @@ h3{
   padding-left: 10em;
 }
 
-.pete,
+.woman,
 .nursery,
 .greenhouse {
   height: 400px;

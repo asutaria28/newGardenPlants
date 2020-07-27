@@ -44,22 +44,14 @@ function showSlides() {
 
 /*form validation on contact section */
 
-function validate() {
-  
-  if (document.form.fullName.value == ""){
-    alert( "Please provide your name!" );
-    document.form.fullName.focus() ;
-    return false;
-  }
- 
-  if( document.form.email.value == "" ) {
-    alert( "Please provide your Email!" );
-    document.form.email.focus() ;
-    return false;
-  }
-  
-  else(true){
-    alert("Thank you for signing up!");
+const email = document.getElementById("email");
 
-  }
-}
+email.addEventListener("input", function (event) {
+      if (email.validity.typeMismatch){
+         email.setCustomValidity("This is not a valid e-mail address!");
+      }
+        else{
+          email.setCustomValidity("Thank you for signing up!");
+        }
+});
+
