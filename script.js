@@ -42,16 +42,56 @@ function showSlides() {
   setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
 
-/*form validation on contact section */
+/*form validation on contact section
 
-const email = document.getElementById("email");
 
-email.addEventListener("input", function (event) {
-      if (email.validity.typeMismatch){
-         email.setCustomValidity("This is not a valid e-mail address!");
+// Defining a function to validate form 
+function validateForm() {
+  // Retrieving the values of form elements 
+  var name = document.form.name.value;
+  var email = document.form.email.value;
+  }
+  
+// Defining error variables with a default value
+  var nameErr = emailErr = true;
+  
+  // Validate name
+  if(name == "") {
+    name.setCustomValidity("Please enter a name");
+  } else {
+      var regex = /^[a-zA-Z\s]+$/;                
+      if(regex.test(name) === false) {
+        name.setCustomValidity("Please enter a valid name");
+      } else {
+          printError("nameErr", "");
+          nameErr = false;
       }
-        else{
-          email.setCustomValidity("Thank you for signing up!");
-        }
-});
-
+  }
+  
+  // Validate email address
+  if(email == "") {
+      email.setCustomValidity("Please enter your email address");
+  } else {
+      // Regular expression for basic email validation
+      var regex = /^\S+@\S+\.\S+$/;
+      if(regex.test(email) === false) {
+          email.setCustomValidity("Please enter a valid email address");
+      } else{
+          printError("emailErr", "");
+          emailErr = false;
+      }
+  }
+  
+  // Prevent the form from being submitted if there are any errors
+  if((nameErr || emailErr) == true) {
+     return false;
+  } else {
+      // Creating a string from input data for preview
+      var dataPreview = "You've entered the following details: \n" +
+                        "Full Name: " + name + "\n" +
+                        "Email Address: " + email + "\n" ;
+    
+      // Display input data in a dialog box before submitting the form
+      alert(dataPreview);
+  }
+;*/ 

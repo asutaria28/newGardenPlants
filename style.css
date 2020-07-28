@@ -53,8 +53,8 @@
   color: white;
 }
 
-}
 
+/* Nav bar style */
   .separator{
    border: 0;
    border-top: 1px solid black;
@@ -73,6 +73,10 @@
      text-decoration: underline;
    }
   
+   /* paragraph spacing */
+   p{
+     line-height: 2em;
+   }
    /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -187,6 +191,8 @@
   padding-top: 10px;
 
 }
+
+/*Page header styles*/
 .main-header{
   height: 8em;
   margin-bottom: 70px;
@@ -255,7 +261,14 @@ form{
 
 }
 
+.pottedPlant2,
+ .girlHoldingPlant{
+  margin-left: 50px;
+}
 
+.peteFamily{
+  margin-top: 50px;
+}
 /* =================================
     Base Element Styles
 ====================================== */
@@ -485,6 +498,10 @@ h3{
 
 @media only screen and (min-width: 1200px) {
 
+  .item{
+    height: 400px;
+    width: 375px;
+  }
   .logo{
     height: 7em;
     width: 25em;
@@ -532,5 +549,11 @@ h3{
 .imgWithText{
   padding-left: 15px;
   margin-left: 70px;
+}
+
+/*spacing of pictures on about page*/
+.pottedPlant2,
+ .girlHoldingPlant{
+  margin-left: 100px;
 }
 }
