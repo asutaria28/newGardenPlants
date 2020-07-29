@@ -18,6 +18,10 @@
     margin-left: 10px;
   }
 
+  .dropdown{
+    z-index: 50;
+  }
+
   /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
@@ -243,6 +247,11 @@ form{
   margin-top: 20px;
 }
 
+/*New Plants page layout*/
+.plantPages{
+  margin-top: 100px;
+  padding-top: 80px;
+}
 
 
 #copyright{
