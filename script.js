@@ -42,7 +42,7 @@ function showSlides() {
   setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
 
-/*form validation on contact section
+/*form validation on contact section 
 
 
 // Defining a function to validate form 
@@ -94,4 +94,5 @@ function validateForm() {
       // Display input data in a dialog box before submitting the form
       alert(dataPreview);
   }
-;*/ 
+;
+*/
