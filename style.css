@@ -225,6 +225,7 @@ h2{
 
 .flex-container2{
   padding-left: 10em;
+  padding-top: 40px;
 }
 
 footer{
@@ -249,10 +250,13 @@ form{
 
 /*New Plants page layout*/
 .plantPages{
-  margin-top: 100px;
+  margin-top: 30px;
   padding-top: 80px;
 }
 
+.picText{
+  margin-left: 3em;
+}
 
 #copyright{
   padding-top: 4em;
@@ -441,7 +445,7 @@ h3{
             width: 100%;
             height: 1px;
             position: absolute;
-            top: 50%;
+            top: 43%;
             z-index: 1;
           }
           
@@ -490,9 +494,11 @@ h3{
     min-height: 100vh;
   }
 
+
    a{
      padding: 0 30px;
    }
+   
   .logo,
   .main-nav,
   .main-nav li{
