@@ -255,7 +255,7 @@ form{
 }
 
 .picText{
-  margin-left: 3em;
+  margin-left: 3.5em;
 }
 
 #copyright{
@@ -281,6 +281,24 @@ form{
 
 .peteFamily{
   margin-top: 50px;
+}
+
+/*footer spacing */
+#contact,
+#copyright{
+  margin-left: 35px;
+}
+
+#contact{
+  max-width: 100px;
+}
+
+input{
+   max-width: 120px;
+}
+
+form{
+  margin-left: 100px;
 }
 /* =================================
     Base Element Styles
@@ -411,9 +429,24 @@ h3{
 
 }
 
+/*footer spacing */
+#contact,
+#copyright{
+  margin-left: 0px;
 }
 
+#contact{
+  max-width: 250px;
+}
 
+input{
+   max-width: 250px;
+}
+
+form{
+  margin-left: 0px;
+}
+}
 @media only screen and (min-width: 760px),
        only screen and (min-width: 700px) and (orientation:landscape)
         {
