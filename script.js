@@ -42,15 +42,6 @@ function showSlides() {
   setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
 
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
 
 /*form validation on contact section */
 
@@ -59,21 +50,22 @@ function printError(elemId, hintMsg) {
   document.getElementById(elemId).innerHTML = hintMsg;
 }
 
-.querySelector
+document.forms["form"].addEventListener("submit", validateForm);
+
 // Defining a function to validate form 
 function validateForm(event) {
 
   event.preventDefault();
-  console.log("it stopped!")
+
   // Retrieving the values of form elements 
-  var name = document.form.fullName.value;
-  var email = document.form.email.value;
+  var name = document.forms["form"] ["fullName"].value;
+  var email = document.forms["form"] ["email"].value;
   
 
 
 // Defining error variables with a default value
   var nameErr = emailErr = true;
-  
+
   // Validate name
   if(name == "") {
     printError("nameErr", "Please enter your name");
@@ -89,12 +81,12 @@ function validateForm(event) {
   
   // Validate email address
   if(email == "") {
-      email.setCustomValidity("Please enter your email address");
+    printError("emailErr", "Please enter your email address");
   } else {
       // Regular expression for basic email validation
       var regex = /^\S+@\S+\.\S+$/;
       if(regex.test(email) === false) {
-          email.setCustomValidity("Please enter a valid email address");
+        printError("emailErr", "Please enter a valid email address");
       } else{
           printError("emailErr", "");
           emailErr = false;
@@ -107,7 +99,7 @@ function validateForm(event) {
   } else {
       // Creating a string from input data for preview
       var dataPreview = "You've entered the following details: \n" +
-                        "Full Name: " + fullName + "\n" +
+                        "Full Name: " + name + "\n" +
                         "Email Address: " + email + "\n" ;
     
       // Display input data in a dialog box before submitting the form

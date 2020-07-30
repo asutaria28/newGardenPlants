@@ -211,10 +211,6 @@ h2{
   padding-top: 40px;
 }
 
-.flex-container2 div:nth-child(even){
-
-background-color: #f0ec20;
-}
 
 footer{
   background-color: rgb(21, 121, 51);
@@ -283,7 +279,7 @@ input{
 }
 
 form{
-  margin-left: 100px;
+  margin-left: 120px;
 }
 /* =================================
     Base Element Styles
@@ -602,6 +598,11 @@ form{
   padding-left: 10em;
 }
 
+.text {
+
+  width: 88%;
+  
+}
 .woman,
 .nursery,
 .greenhouse {
