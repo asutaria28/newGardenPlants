@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <script src="script.js" async defer></script>
     </head>
     <body>
 
@@ -27,16 +28,17 @@
         <![endif]-->
     <Header class='main-header'>
         <!-- Title and tagline in page header -->
-      
+       
         <a href="index.html"><img src="pictures/default.png" class="logo"></a>
        
       <br> <br>
 
       <hr class="separator">
        <!-- Menu Nav -->
-       <nav class="main-nav container1">
+       <nav class="main-nav container1" class="topnav">
        <ul>
         <li><a href="index.html">Home</a></li>
+        <div class="myLinks">
         <div class="dropdown">
           <a class="dropdown">Plant Types</a>
           <div class="dropdown-content">
@@ -52,8 +54,13 @@
         </div>
         <li><a href="about.html">About</a></li>
         <li><a href="index.html#contact">Contact Us</a></li>
-
+      </div>
        </ul>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
     </nav>
     <hr class="separator">
 
@@ -188,22 +195,22 @@
         </div><br>
 
         
-        <form  name = "form" onsubmit = "return validateform()">
+        <form  name="form">
           <label>Sign Up for the Newsletter!</label><br><br>
          
           <label for="name"> Full Name:</label><br>
           <input type="text" id="name" name="fullName"><br><br>
-          
+          <div class="error" id="nameErr"></div>
         
           <label for="email">Email:</label><br>
           <input type="email" id="email" name="email" placeholder="        email@site.com"><br><br>
-        
+          <div class="error" id="emailErr"></div>
         
           <input type="submit" value="Submit">
    
         </form>
       
     </footer>
-        <script src="script.js" async defer></script>
+        
     </body>
 </html>

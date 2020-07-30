@@ -42,26 +42,45 @@ function showSlides() {
   setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
 
-/*form validation on contact section 
-
-
-// Defining a function to validate form 
-function validateForm() {
-  // Retrieving the values of form elements 
-  var name = document.form.name.value;
-  var email = document.form.email.value;
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
+}
+
+/*form validation on contact section */
+
+// Defining a function to display error message
+function printError(elemId, hintMsg) {
+  document.getElementById(elemId).innerHTML = hintMsg;
+}
+
+.querySelector
+// Defining a function to validate form 
+function validateForm(event) {
+
+  event.preventDefault();
+  console.log("it stopped!")
+  // Retrieving the values of form elements 
+  var name = document.form.fullName.value;
+  var email = document.form.email.value;
   
+
+
 // Defining error variables with a default value
   var nameErr = emailErr = true;
   
   // Validate name
   if(name == "") {
-    name.setCustomValidity("Please enter a name");
+    printError("nameErr", "Please enter your name");
   } else {
       var regex = /^[a-zA-Z\s]+$/;                
       if(regex.test(name) === false) {
-        name.setCustomValidity("Please enter a valid name");
+        printError("nameErr", "Please enter a valid name");
       } else {
           printError("nameErr", "");
           nameErr = false;
@@ -88,11 +107,10 @@ function validateForm() {
   } else {
       // Creating a string from input data for preview
       var dataPreview = "You've entered the following details: \n" +
-                        "Full Name: " + name + "\n" +
+                        "Full Name: " + fullName + "\n" +
                         "Email Address: " + email + "\n" ;
     
       // Display input data in a dialog box before submitting the form
       alert(dataPreview);
   }
-;
-*/
+}

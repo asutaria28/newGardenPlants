@@ -22,6 +22,7 @@
     z-index: 50;
   }
 
+  
   /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
@@ -58,24 +59,7 @@
 }
 
 
-/* Nav bar style */
-  .separator{
-   border: 0;
-   border-top: 1px solid black;
 
-  }
-  a {
-      color:forestgreen;
-  }
- 
-  a:link{
-      text-decoration: none;
-      
-  }
-
-   a:hover{
-     text-decoration: underline;
-   }
   
    /* paragraph spacing */
    p{
@@ -224,8 +208,12 @@ h2{
 }
 
 .flex-container2{
-  padding-left: 10em;
   padding-top: 40px;
+}
+
+.flex-container2 div:nth-child(even){
+
+background-color: #f0ec20;
 }
 
 footer{
@@ -254,9 +242,6 @@ form{
   padding-top: 80px;
 }
 
-.picText{
-  margin-left: 3.5em;
-}
 
 #copyright{
   padding-top: 4em;
@@ -303,6 +288,24 @@ form{
 /* =================================
     Base Element Styles
 ====================================== */
+ /* Nav bar style */
+ .separator{
+  border: 0;
+  border-top: 1px solid black;
+
+}
+a {
+    color:forestgreen;
+}
+
+a:link{
+    text-decoration: none;
+    
+}
+
+  a:hover{
+    text-decoration: underline;
+  }
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
@@ -352,7 +355,10 @@ h4{
 
 .imgWithText{
    text-align: center;
-   width: 207px;
+   max-width: 260px;
+   margin: 50px auto 0 auto;
+   padding-top: 20px;
+   
 
 }
 
@@ -423,7 +429,10 @@ h3{
 
 }
 
-
+/*about page background*/
+.about{
+    background: url("Pictures/potted-plants9.jpg") no-repeat, linear-gradient(white);
+}
 /* =================================
     Media Queries
 ====================================== */
@@ -439,6 +448,7 @@ h3{
    flex-basis: auto;
    flex: 50%;
    padding-left: 0;
+   justify-content: space-between;
    
 
 }
@@ -469,6 +479,8 @@ form{
             margin-bottom: 20px;
           
           }
+
+         
 
           .woman,
           .nursery,
@@ -610,7 +622,7 @@ form{
 }
 
 .imgWithText{
-  padding-left: 15px;
+ 
   margin-left: 70px;
 }
 
