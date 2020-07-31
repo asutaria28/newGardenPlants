@@ -61,7 +61,7 @@ function validateForm(event) {
   var name = document.forms["form"] ["fullName"].value;
   var email = document.forms["form"] ["email"].value;
   
-console.log("It stopped");
+
 
 // Defining error variables with a default value
   var nameErr = emailErr = true;
